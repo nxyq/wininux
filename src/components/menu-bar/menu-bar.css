@@ -44,8 +44,17 @@
 }
 
 .scratch-logo {
-    height:  1.6rem;
+    display: block;
+    height: 40px;   /* Try 40-48px */
+    width: auto;
+    object-fit: contain;
     vertical-align: middle;
+}
+
+.menu-bar-item:first-child {
+    padding: 0 1rem;
+    display: flex;
+    align-items: center;
 }
 
 .scratch-logo.clickable {
