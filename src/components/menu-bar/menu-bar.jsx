@@ -466,6 +466,7 @@ class MenuBar extends React.Component {
                 {remixMessage}
             </Button>
         );
+        console.log(this.props.logo);
         // Show the About button only if we have a handler for it (like in the desktop app)
         const aboutButton = this.buildAboutMenu(this.props.onClickAbout);
         return (
@@ -485,7 +486,7 @@ class MenuBar extends React.Component {
                                         [styles.clickable]: typeof this.props.onClickLogo !== 'undefined'
                                     })}
                                     draggable={false}
-                                    src={this.props.logo}
+                                    src={scratchLogo}
                                     onClick={this.props.onClickLogo}
                                 />
                             </div>
